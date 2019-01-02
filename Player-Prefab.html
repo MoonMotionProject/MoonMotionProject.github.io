@@ -88,34 +88,55 @@
 					<!-- divider -->
 					<div class="block-divider wow fadeIn"></div>
 				</div>
+				<br>
+				<br>
 				<!-- subDocumentation flyer (to animate in intensely) -->
 				<div class="wow fadeIn fadeInUp_disabled">
+					<!-- article -->
+					<div class="block-article-padding align-left">
+						<!-- Features -->
+						<h4 id="Features">
+							Features
+						</h4>
+						<p class="wow fadeIn">
+							The Player <a href="Prefabs.html">prefab</a> has been extended from the <a href="SteamVR-Interaction-System.html">SteamVR Interaction System</a>, and now supports key features such as <a href="Dynamic-Player-Colliders.html">dynamic body colliders</a>, <a href="Terrain-Response.html">terrain detection</a>, <a href="Dynamic-Movement-Audio.html">wind feedback</a>, and <a href="Smooth-Monitor-Camera-Override.html">camera motion smoothing</a>.
+						</p>
+					</div>
+					<br>
 					<!-- video -->
 					<div class="grid media-grid">
-						<div class="cell media-cell wow fadeIn">
+						<div class="cell media-cell no-vertical-padding wow fadeIn">
 							<video width="100%" height="auto" no-controls autoplay muted loop>
 								<source src="videos/Player.mp4" type="video/mp4"/>
 								Your browser does not support the video tag.
 							</video>
 						</div>
 					</div>
+					<br>
 					<!-- article -->
 					<div class="block-article-padding align-left">
-						<!-- description -->
+						<!-- Setup -->
+						<h4 id="Setup">
+							Setup
+						</h4>
 						<p class="wow fadeIn">
-							The <a href="Player-Prefab.html">Player</a> is provided as a <a href="Prefabs.html">Prefab</a> so that it may easily be reused between scenes. 
+							To begin using <a href="index.html">Moon Motion</a> and set up <a href="Locomotions.html">locomotions</a> for your <a href="Player.html">player</a>, you will need to first put the Player prefab into your scene <span class="italicized">(Assets/Plugins/Moon Motion Toolkit/Player/Player.prefab)</span>. If you are using the provided empty scene to start from, that's all there is to it, the player should already work. Although you may want to throw down some terrain to move around on before you test out the player's locomotions.
 						</p>
 						<p class="wow fadeIn">
-							<span class="italicized">(Assets/Plugins/Moon Motion Toolkit/Player/Player.prefab)</span>
+							Alternatively, you can start testing from one of the toolkit's <a href="Scenes.html">example scenes</a>, which both already have an instance of the Player prefab you can edit.
 						</p>
 						<p class="wow fadeIn">
-							The Player prefab has been extended from the <a href="SteamVR-Interaction-System.html">SteamVR Interaction System</a>, and now supports key features such as <a href="Dynamic-Player-Colliders.html">dynamic body colliders</a>, <a href="Terrain-Response.html">terrain detection</a>, <a href="Dynamic-Movement-Audio.html">wind feedback</a>, and <a href="Smooth-Monitor-Camera-Override.html">camera motion smoothing</a>.
+							If you are using some other scene (which may include cameras and audio listeners to begin with), you'll want to make sure the player has priority over any of those (probably by simply deleting them).
 						</p>
 						<p class="wow fadeIn">
-							To use <a href="index.html">Moon Motion</a> and set up different <a href="Locomotions.html">locomotion</a> schemes for your player, you will need to put the Player prefab into a scene and make sure it has priority over any other cameras or audio listeners currently in the scene. The Player's hands have <a href="Locomotions-Cycling.html">Locomotions Cyclers</a> from where the locomotion combinations can be defined.
+							Once you have got a Player prefab in your scene of choice, you probably want to drag it back into your assets view to create your own copy of the prefab so that the original is maintained for reference.
 						</p>
+						<!-- Customization -->
+						<h4 id="Customization">
+							Customization
+						</h4>
 						<p class="wow fadeIn">
-							Once you have placed a Player prefab in your own scene, or have decided to edit it inside one of the <a href="Scenes.html">toolkit's scenes</a>, you probably want to drag it back into your assets view to start using your own copy of the prefab and maintain the original for reference.
+							Customize your Player through the inspector, via drag-and-dropping, checkboxes, and dropdowns. Most importantly, the Player's hands have <a href="Locomotions-Cycling.html">Locomotions Cyclers</a>, upon which the locomotion combinations can be defined.
 						</p>
 					</div>
 				</div>
