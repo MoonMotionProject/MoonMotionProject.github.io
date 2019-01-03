@@ -114,15 +114,51 @@
 						<p class="booster-module-statement muted-text wow fadeIn">
 							The Booster Jet is a module of the <a href="Boosting.html">Boosting locomotion</a>; it provides a particular functionality for its parent Booster. If it is disabled or removed, then the relevant boosting functionality will behave as by default. Most modules can optionally affect change globally (for both hands' Boosters). Booster modules can also depend upon conditions specified by their <a href="Dependencies.html">dependencies</a> settings.
 						</p>
+						<br>
+						<!-- video -->
+						<div class="grid media-grid">
+							<div class="cell media-cell no-vertical-padding wow fadeIn">
+								<video width="100%" height="auto" no-controls autoplay muted loop>
+									<source src="videos/Booster Aesthetics Cycling.mp4" type="video/mp4"/>
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+						<br>
 						<h4 class="wow fadeIn">
 							Booster Jet
 						</h4>
 						<p class="wow fadeIn">
-							The Booster Jet is a group of submodules. By default, it includes fire, smoke, sparks, and audio. These particles and audio modules can be individually adjusted. 
+							The Booster Jet is a group of submodules. By default, it includes fire, smoke, sparks, and audio. They are to be included/activated via <a href="Booster-Aesthetics-Set-Cycler.html">Booster Aesthetics Cycling</a>.
 						</p>
 						<div class="booster-module-screenshot-container">
 							<img src="images/Booster Jet.jpg" class="docs-screenshot wow fadeIn"/>
 						</div>
+						<p class="warning-text wow fadeIn">
+							Note:
+							<br>
+							Currently, the smoke and sparks particles have been removed from the Player's Booster Jets. This is because of the cost to performance. This may be a result of <a href="https://forum.unity.com/threads/particlesystem-update-using-significant-resources-even-for-default-particle-system.445575/#post-3354610" target="blank">issues between VR and particles</a> before Unity v.2018.3; regardless, an alternate fix would be welcome until that Unity version is tested. If you would like to add either smoke or sparks back in and handle their performance costs, you can retrieve them from the <span class="italicized">Archived Booster Jet Smoke and Sparks Particles</span> prefab and update the <a href="Booster-Aesthetics-Set-Cycler.html">Aesthetics Cyclers</a>.
+						</p>
+						<p class="wow fadeIn">
+							These particles and audio modules can be individually adjusted per their particles system components. You could also swap out different particle materials, or new particles systems entirely. Some of these Booster Jet submodules have scripts for controlling when they emit, based on certain <a href="Controller-Input-Handling.html">input</a> detection.
+						</p>
+						<p class="wow fadeIn">
+							The default setup is the following:
+							<ul class="halftabbed wow fadeIn">
+								<li>
+									The fire always emits during boosting, and has a greater length while boosting <a href="Booster-Force-Applier.html">deeply</a>.
+								</li>
+								<li>
+									The smoke emits during deep boosting.
+								</li>
+								<li>
+									The sparks emit whenever deep boosting begins. 
+								</li>
+								<li>
+									The audio always plays during boosting, and changes in pitch while boosting deeply.
+								</li>
+							</ul>
+						</p>
 					</div>
 				</div>
 			</div>

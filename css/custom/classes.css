@@ -45,9 +45,12 @@
 	font-family: "Open Sans", sans-serif;
 }
 
-/* muted text */
+/* text colorations */
 .muted-text {
 	color: var(--color-Steam-text);
+}
+.warning-text {
+	color: pink;
 }
 
 /* backgrounds */
