@@ -64,12 +64,12 @@
 				<br>
 			</div>
 
-			<!-- Player top (to appear to keep among Player) -->
+			<!-- Locomotions top (to appear to keep among Locomotions) -->
 			<div class="unselectable">
 				<!-- Locomotions link header -->
-				<a href="Player.html">
+				<a href="Locomotions.html">
 					<h2 class="docs-link-header">
-						Player
+						Locomotions
 					</h2>
 				</a>
 				<!-- divider -->
@@ -83,7 +83,7 @@
 				<div class="wow fadeIn fadeInUp_disabled">
 					<!-- header -->
 					<h2 class="weight-heavy wow fadeIn">
-						Terrain Response
+						Antidiminishor Cube
 					</h2>
 					<!-- divider -->
 					<div class="block-divider wow fadeIn"></div>
@@ -94,16 +94,9 @@
 				<div class="wow fadeIn fadeInUp_disabled">
 					<!-- article -->
 					<div class="block-article-padding align-left">
-						<!-- description -->
+						<img src="images/Antidiminishor Cubes.jpg" class="docs-screenshot wow fadeIn"/>
 						<p class="wow fadeIn">
-							Terrain Response specifies terrain and ground collision layers, uses <a href="Dynamic-Player-Colliders.html">player collision</a> and raycasting to track groundedness, broadcasts liftoff/landing events, and <a href="Dynamic-Movement-Audio.html">plays liftoff/landing audio</a> accordingly.
-						</p>
-						<p class="wow fadeIn">
-							You can find this component directly on the <a href="Player-Prefab.html">Player prefab</a>:
-						</p>
-						<img src="images/Terrain Response Recognized Layers.jpg" class="docs-screenshot wow fadeIn"/>
-						<p class="wow fadeIn">
-							This is where you'll want to define which layers are considered "ground terrain" and "nonground terrain". Ground is considered a more particular kind of terrain. For example, by default, <a href="Booster-Diminisher.html">Booster Diminishing</a> only recognizes ground terrain. To change the layers for either of these recognized categories, edit the arrays shown above to match layer names set for your Unity project.
+							The Antidiminishor Cube is an example object for the <a href="Booster-Antidiminisher.html">Booster Antidiminisher</a> module to recognize via raycasting to invert the <a href="Boosting.html">boosting locomotion</a>'s force to pull the player toward the raycasted cube position instead of boosting away from it.
 						</p>
 					</div>
 				</div>

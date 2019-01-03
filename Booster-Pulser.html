@@ -64,12 +64,25 @@
 				<br>
 			</div>
 
-			<!-- Player top (to appear to keep among Player) -->
+			<!-- Locomotions top (to appear to keep among Locomotions) -->
 			<div class="unselectable">
 				<!-- Locomotions link header -->
-				<a href="Player.html">
+				<a href="Locomotions.html">
 					<h2 class="docs-link-header">
-						Player
+						Locomotions
+					</h2>
+				</a>
+				<!-- divider -->
+				<div class="block-divider"></div>
+				<br>
+			</div>
+
+			<!-- Boosting top (to appear to keep among Boosting) -->
+			<div class="unselectable">
+				<!-- Boosting link header -->
+				<a href="Boosting.html">
+					<h2 class="docs-link-header">
+						Boosting
 					</h2>
 				</a>
 				<!-- divider -->
@@ -83,7 +96,7 @@
 				<div class="wow fadeIn fadeInUp_disabled">
 					<!-- header -->
 					<h2 class="weight-heavy wow fadeIn">
-						Terrain Response
+						Booster Pulser
 					</h2>
 					<!-- divider -->
 					<div class="block-divider wow fadeIn"></div>
@@ -95,16 +108,24 @@
 					<!-- article -->
 					<div class="block-article-padding align-left">
 						<!-- description -->
-						<p class="wow fadeIn">
-							Terrain Response specifies terrain and ground collision layers, uses <a href="Dynamic-Player-Colliders.html">player collision</a> and raycasting to track groundedness, broadcasts liftoff/landing events, and <a href="Dynamic-Movement-Audio.html">plays liftoff/landing audio</a> accordingly.
+						<h4 class="wow fadeIn">
+							Booster Module
+						</h4>
+						<p class="booster-module-statement muted-text wow fadeIn">
+							The Booster Pulser is a module of the <a href="Boosting.html">Boosting locomotion</a>; it provides a particular functionality for its parent Booster. If it is disabled or removed, then the relevant boosting functionality will behave as by default. Most modules can optionally affect change globally (for both hands' Boosters). Booster modules can also depend upon conditions specified by their <a href="Dependencies.html">dependencies</a> settings.
 						</p>
+						<h4 class="wow fadeIn">
+							Booster Pulser
+						</h4>
 						<p class="wow fadeIn">
-							You can find this component directly on the <a href="Player-Prefab.html">Player prefab</a>:
+							The Pulser will add a pulsing force to the booster's force calculation. You can tweak the force percentage and frequency, as well as set whether to pulse based on the y direction only. This is useful when combined with <a href="Booster-Automator.html">Automating</a> and <a href="Booster-Relativizer.html">Relativizing</a> to have the player automatically hover up and down.
 						</p>
-						<img src="images/Terrain Response Recognized Layers.jpg" class="docs-screenshot wow fadeIn"/>
-						<p class="wow fadeIn">
-							This is where you'll want to define which layers are considered "ground terrain" and "nonground terrain". Ground is considered a more particular kind of terrain. For example, by default, <a href="Booster-Diminisher.html">Booster Diminishing</a> only recognizes ground terrain. To change the layers for either of these recognized categories, edit the arrays shown above to match layer names set for your Unity project.
+						<p class="no-bottom-margin wow fadeIn">
+							You can also setup <a href="Controller-Input-Handling.html">input</a> to toggle pulsing.
 						</p>
+						<div class="booster-module-screenshot-container">
+							<img src="images/Booster Pulser.jpg" class="docs-screenshot wow fadeIn"/>
+						</div>
 					</div>
 				</div>
 			</div>
