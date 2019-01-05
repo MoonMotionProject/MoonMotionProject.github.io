@@ -96,14 +96,25 @@
 					<div class="block-article-padding align-left">
 						<!-- description -->
 						<p class="wow fadeIn">
-							Terrain Response specifies terrain and ground collision layers, uses <a href="Dynamic-Player-Colliders.html">player collision</a> and raycasting to track groundedness, broadcasts liftoff/landing events, and <a href="Dynamic-Movement-Audio.html">plays liftoff/landing audio</a> accordingly.
+							Terrain Response specifies terrain layers and broadcasts liftoff/landing events about the player contacting the terrain. Any script can subscribe to these events. It also <a href="Dynamic-Movement-Audio.html">plays liftoff/landing audio</a> according to its own events.
 						</p>
 						<p class="wow fadeIn">
-							You can find this component directly on the <a href="Player-Prefab.html">Player prefab</a>:
+							There are two categories of terrain: ground and nonground. Ground is considered a more particular kind of terrain, usually characterized by being relatively flat such as a floor or the surface of the earth &ndash; although you can associate it with whatever you like. The nonground category is meant to be used for other terrain aspects such as rocks, debris, stairs, crates, and the like (depending on how your game will work).
+						</p>
+						<p class="wow fadeIn">
+							<a href="Dynamic-Player-Colliders.html">Player collision</a> and raycasting are used with both terrain categories to track whether the player is currently grounded (colliding with ground terrain) or terrained (colliding with either ground or nonground terrain).
+						</p>
+						<p class="wow fadeIn">
+							 For example, by default, <a href="Booster-Diminisher.html">Booster Diminishing</a> only recognizes ground terrain. Nonground terrain might be a rock, for example, which you don't want to affect Booster Diminishing. If the player is flying at max height over the terrain, and rocks are considered to be ground terrain, the player would "ride" over the rock, even though the player is quite high up and it might not make sense for the rock to affect the player's altitude. In that case you could simply change the rocks to a nonground terrain layer so that Diminishing won't recognize it. Determine what makes the most sense for your situation.
+						<p class="wow fadeIn">
+							Or for another example, maybe you want to allow <a href="Flipping.html">Flipping</a> only while touching ground terrain, whereas <a href="Treading.html">Treading</a> is allowed while touching any kind of terrain, including a rock. That way, you can't flip upside down while standing on a rock, but you can still walk around on, and off of, the rock. So you would assign rocks to the nonground terrain layer. Then you would select the logic on both of those locomotions for when they are allowed, using the <a href="Dependencies.html">Dependencies</a> "When Grounded" and "When Terrained" for each locomotion, respectively.
+						</p>
+						<p class="wow fadeIn">
+							You can find the Terrain Response component directly on the <a href="Player-Prefab.html">Player prefab</a>:
 						</p>
 						<img src="images/Terrain Response Recognized Layers.jpg" class="docs-screenshot wow fadeIn"/>
 						<p class="wow fadeIn">
-							This is where you'll want to define which layers are considered "ground terrain" and "nonground terrain". Ground is considered a more particular kind of terrain. For example, by default, <a href="Booster-Diminisher.html">Booster Diminishing</a> only recognizes ground terrain. To change the layers for either of these recognized categories, edit the arrays shown above to match layer names set for your Unity project.
+							This is where you'll want to define which layers are considered ground terrain and nonground terrain. To change the layers for either of these recognized categories, edit the arrays shown above to match your particular layer names set in your Unity project's layers definitions.
 						</p>
 					</div>
 				</div>
