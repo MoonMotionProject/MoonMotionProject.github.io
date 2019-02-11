@@ -6,6 +6,9 @@
 :root {
     --color-Felewin: #5cb85c;
     --color-Felewin-saturated: #34af34;
+	--color-Felewin-bright: #80ff80;
+    --color-Felewin-dark: #243227;
+	--color-Felewin-transparent: rgba(188, 255, 128, 0.1);
     --color-light: white;
     --color-dark: #232325;
 	--color-selection: #b0f3e6;
@@ -13,6 +16,21 @@
 	--color-link-hovered: #428bca;
 	--color-link-Felewin: var(--color-Felewin);
 	--color-link-Felewin-hovered: var(--color-Felewin-saturated);
+}
+.color-Felewin {
+	color: var(--color-Felewin);
+}
+.color-Felewin-saturated {
+	color: var(--color-Felewin-saturated);
+}
+.color-Felewin-bright {
+	color: var(--color-Felewin-bright);
+}
+.color-light {
+	color: var(--color-light);
+}
+.color-dark {
+	color: var(--color-dark);
 }
 
 
@@ -170,6 +188,28 @@ button:focus {
 }
 .align-right {
 	text-align: right;
+}
+
+/* floating */
+.float-left {
+	float: left;
+}
+.float-center {
+	float: none;
+}
+.float-right {
+	float: right;
+}
+
+/* display */
+.display-inline {
+	display: inline;
+}
+.display-block {
+	display: block;
+}
+.display-inline-block {
+	display: inline-block;
 }
 
 /* tabbing */
