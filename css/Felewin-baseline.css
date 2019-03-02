@@ -16,6 +16,8 @@
 	--color-link-hovered: #428bca;
 	--color-link-Felewin: var(--color-Felewin);
 	--color-link-Felewin-hovered: var(--color-Felewin-saturated);
+	--color-link-Moon-Motion: #53bdd3;
+	--color-link-Moon-Motion-hovered: #1996cd;
 }
 .color-Felewin {
 	color: var(--color-Felewin);
@@ -64,10 +66,16 @@ a {
 	-webkit-transition: .2s;
 	transition: .2s;
 }
+.link-Moon-Motion {
+	color: var(--color-link-Moon-Motion);
+}
 a:hover {
 	color: var(--color-link-hovered);
     text-decoration: none;
 	cursor: pointer;
+}
+.link-Moon-Motion:hover {
+	color: var(--color-link-Moon-Motion-hovered);
 }
 a:visited {
     text-decoration: none;
