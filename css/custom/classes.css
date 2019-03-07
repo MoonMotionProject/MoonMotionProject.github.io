@@ -37,14 +37,6 @@
 	}
 }
 
-/* fonts */
-.font-Arial {
-	font-family: "Arial", sans-serif;
-}
-.font-Open-Sans {
-	font-family: "Open Sans", sans-serif;
-}
-
 /* text colorations */
 .muted-text {
 	color: var(--color-Steam-text);

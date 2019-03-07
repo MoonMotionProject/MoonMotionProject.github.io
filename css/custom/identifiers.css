@@ -100,17 +100,3 @@
 #construction-divider {
 	width: 50%;
 }
-
-/* footer */
-#footer {
-	display: table;
-	overflow: hidden;
-	width: 100%;
-}
-#footer-text {
-	display: table-cell;
-	vertical-align: middle;
-}
-#footer-text > p {
-	margin-bottom: 0;
-}
