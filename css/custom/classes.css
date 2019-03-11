@@ -305,6 +305,37 @@ h4 > i {
 	color: white;
 }
 
+/* Platforms Support */
+.platforms-support-brands-image {
+	/* size */
+	width: 82vw;
+	height: auto;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.platforms-support-brands-image {
+		/* size */
+		width: 80vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.platforms-support-brands-image {
+		/* size */
+		width: 70vw;
+	}
+}
+@media only screen and (min-width: 1200px) {		/* responsivity - at least: {arbitrary} */
+	.platforms-support-brands-image {
+		/* size */
+		width: 60vw;
+	}
+}
+@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
+	.platforms-support-brands-image {
+		/* size */
+		width: 55vw;
+	}
+}
+
 /* docs */
 .docs-scrollbar {
 	overflow: scroll;

@@ -58,42 +58,8 @@
 }
 
 /* Platforms Support */
-#platforms-support-brands-image {
-	/* size */
-	width: 82vw;
-	height: auto;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	#platforms-support-brands-image {
-		/* size */
-		width: 90vw;
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	#platforms-support-brands-image {
-		/* size */
-		width: 70vw;
-	}
-}
-@media only screen and (min-width: 1200px) {		/* responsivity - at least: {arbitrary} */
-	#platforms-support-brands-image {
-		/* size */
-		width: 50vw;
-	}
-}
-@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
-	#platforms-support-brands-image {
-		/* size */
-		width: 40vw;
-	}
-}
-#platforms-support-Oculus-logo {
-	/* size */
-	width: 7vw;
-	height: auto;
-
-	/* margin */
-	margin-bottom: 2em;
+#Unity-compatibility-statement-padding {
+	padding-left: 22.5%;
 }
 
 /* In Development */
