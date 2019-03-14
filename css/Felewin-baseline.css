@@ -18,6 +18,7 @@
 	--color-Felewin-blue-dark: #232d3f;
     --color-Felewin-blue-darker: #242932;
 	--color-Felewin-blue-darkest: #1c1d22;
+	--color-Felewin-blue-darkest-transparent: rgba(28, 29, 34, 0.93);
     --color-light: white;
     --color-dark: #232325;
 	--color-selection: #b0f3e6;
@@ -28,10 +29,14 @@
 	--color-One-Giant-Leap-light: #fb922b;
 	--color-One-Giant-Leap-dark: #00080f;
 	--color-One-Giant-Leap-dark-transparent: rgba(0, 8, 15, 0.93);
+	--color-link-One-Giant-Leap: var(--color-One-Giant-Leap-light);
+	--color-link-One-Giant-Leap-hovered: #c37121;
 	--color-Moon-Motion: #0073ad;		/* (the average color of the Moon Motion Cover image) */
-	--color-Moon-Motion-transparent: rgba(0, 115, 173, 0.1);
+	--color-Moon-Motion-transparent: rgba(0, 115, 173, 0.93);
+	--color-Moon-Motion-cover-dark-transparent: rgba(2, 20, 32, 0.93);
 	--color-link-Moon-Motion: #53bdd3;
 	--color-link-Moon-Motion-hovered: #1996cd;
+	--color-Felewin-s-Gallery-dark-transparent: rgba(0, 15, 6, 0.93);
 	--color-indigo-purple: #23037e;
 	/* other brands */
 	--color-Itch: #fa5c5c;
@@ -40,15 +45,35 @@
 	--color-Vive: #25a1c3;
 	--color-Vive-logo: #00b5e1;
 	--color-Steam: #171a21;
+	--color-Steam-transparent: rgba(23, 26, 33, 0.93);
 	--color-Steam-lightened: #2b303d;
+	--color-Steam-lightened-transparent: rgba(43, 48, 61, 0.93);
 	--color-Steam-text: #b8b6b4;
 	--color-link-Steam: #94df2c;
 	--color-link-Steam-hovered: #70aa21;
 	--color-Steam-embed: #282e39;
 	--color-Discord: #7289DA;
 	--color-Git-Hub: #a54df8;
+	--color-link-Git-Hub: var(--color-Git-Hub);
+	--color-link-Git-Hub-hovered: #843ec7;
+	--color-Twitter: #1DA1F2;
+	--color-link-Twitter: var(--color-Twitter);
+	--color-link-Twitter-hovered: #1782c4;
+	--color-Linkedin: #0077B5;
+	--color-link-Linkedin: var(--color-Linkedin);
+	--color-link-Linkedin-hovered: #005e8f;
+	--color-Deviantart: #05cc47;
+	--color-link-Deviantart: var(--color-Deviantart);
+	--color-link-Deviantart-hovered: #049b36;
+	--color-Youtube: #ff0000;
+	--color-link-Youtube: var(--color-Youtube);
+	--color-link-Youtube-hovered: #cd0000;
 }
-/* background colors */ */
+/* background colors */
+.background-black {
+	background-color: black;
+	color: white;
+}
 .background-white {
 	background-color: white;
 	color: black;
@@ -110,8 +135,28 @@
 	background-image: linear-gradient(to right, var(--color-Felewin-lush), var(--color-Felewin-bright));
 	color: white;
 }
+.background-black-to-Steam-lightened {
+	background-image: linear-gradient(to right, black, var(--color-Steam-lightened));
+	color: white;
+}
+.background-Steam-lightened-to-Moon-Motion {
+	background-image: linear-gradient(to right, var(--color-Steam-lightened), var(--color-Moon-Motion));
+	color: white;
+}
+.background-Steam-lightened-to-Felewin-blue-dark {
+	background-image: linear-gradient(to right, var(--color-Steam-lightened), var(--color-Felewin-blue-dark));
+	color: white;
+}
 .background-Felewin-blue-dark-to-Moon-Motion {
 	background-image: linear-gradient(to right, var(--color-Felewin-blue-dark), var(--color-Moon-Motion));
+	color: white;
+}
+.background-Felewin-dark-to-Felewin-blue-dark {
+	background-image: linear-gradient(to right, var(--color-Felewin-dark), var(--color-Felewin-blue-dark));
+	color: white;
+}
+.background-Felewin-blue-dark-to-Felewin-dark {
+	background-image: linear-gradient(to right, var(--color-Felewin-blue-dark), var(--color-Felewin-dark));
 	color: white;
 }
 .background-Felewin-dark-to-Felewin-blue-darkest {
@@ -143,6 +188,9 @@
 }
 .color-Felewin-bright {
 	color: var(--color-Felewin-bright);
+}
+.color-Felewin-lush {
+	color: var(--color-Felewin-lush);
 }
 .color-light {
 	color: var(--color-light);
@@ -271,6 +319,9 @@ button:focus {
 }
 
 /* margining */
+.marginless {
+	margin: 0 !important;
+}
 .no-top-margin {
 	margin-top: 0 !important;
 }
@@ -318,21 +369,6 @@ button:focus {
 }
 .no-padding {
 	padding: 0 !important;
-}
-
-/* alignment */
-.align-left {
-	text-align: left;
-}
-.align-center {
-	text-align: center;
-}
-.align-right {
-	text-align: right;
-}
-.valign-center {
-	display: flex;
-	align-items: center;
 }
 
 /* floating */
@@ -404,7 +440,34 @@ button:focus {
     -ms-filter: "FlipH";
 }
 
+/* alignment */
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.valign-center {
+	display: flex;
+	align-items: center;
+}
+
 /* links */
+.link-Felewin {
+	color: var(--color-link-Felewin);
+}
+.link-Felewin:hover {
+	color: var(--color-link-Felewin-hovered);
+}
+.link-One-Giant-Leap {
+	color: var(--color-link-One-Giant-Leap);
+}
+.link-One-Giant-Leap:hover {
+	color: var(--color-link-One-Giant-Leap-hovered);
+}
 .link-Moon-Motion {
 	color: var(--color-link-Moon-Motion);
 }
@@ -423,11 +486,35 @@ button:focus {
 .link-Steam:hover {
 	color: var(--color-link-Steam-hovered);
 }
-.link-Felewin {
-	color: var(--color-link-Felewin);
+.link-Git-Hub {
+	color: var(--color-link-Git-Hub);
 }
-.link-Felewin:hover {
-	color: var(--color-link-Felewin-hovered);
+.link-Git-Hub:hover {
+	color: var(--color-link-Git-Hub-hovered);
+}
+.link-Twitter {
+	color: var(--color-link-Twitter);
+}
+.link-Twitter:hover {
+	color: var(--color-link-Twitter-hovered);
+}
+.link-Linkedin {
+	color: var(--color-link-Linkedin);
+}
+.link-Linkedin:hover {
+	color: var(--color-link-Linkedin-hovered);
+}
+.link-Deviantart {
+	color: var(--color-link-Deviantart);
+}
+.link-Deviantart:hover {
+	color: var(--color-link-Deviantart-hovered);
+}
+.link-Youtube {
+	color: var(--color-link-Youtube);
+}
+.link-Youtube:hover {
+	color: var(--color-link-Youtube-hovered);
 }
 
 /* text formatting */
