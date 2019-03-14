@@ -1,11 +1,8 @@
 /* COLORS */
 
 :root {
-	/* cover */
-	--color-cover-average: #0073ad;
-
 	/* general */
-    --color-main: var(--color-cover-average);
+    --color-main: var(--color-Moon-Motion);
 	--color-light: var(--color-Vive);
 	--color-dark: var(--color-Steam);
 	--color-dark-lighter: var(--color-Steam-lightened);

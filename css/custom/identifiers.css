@@ -1,56 +1,6 @@
 /* IDENTIFIERS */
 
 
-/* cover */
-#cover-image-mobile {
-	display: inline;
-}
-#cover-image-tablet {
-	display: none;
-}
-#cover-image-desktop {
-	display: none;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	#cover-image-mobile {
-		display: none;
-	}
-	#cover-image-tablet {
-		display: inline;
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	#cover-image-tablet {
-		display: none;
-	}
-	#cover-image-desktop {
-		display: inline;
-	}
-}
-#cover-buttons-grid-positioner {
-	/* positioning */
-	padding-top: 50vw;
-	left: 10vw;
-	right: 10vw;
-	margin: 0 auto;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	#cover-buttons-grid-positioner {
-		/* positioning */
-		padding-top: 28vw;
-		left: 24vw;
-		right: 24vw;
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	#cover-buttons-grid-positioner {
-		/* positioning */
-		padding-top: 19.8vw;
-		left: 36vw;
-		right: 36vw;
-	}
-}
-
 /* Create Moving Experiences */
 #Create-Moving-Experiences-media > .media-cell > a > h4 {
 	color: var(--color-Steam-text);

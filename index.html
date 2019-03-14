@@ -32,17 +32,17 @@
 	<div>
 		
 		<!-- cover -->
-		<div class="relative">
+		<div class="relative unselectable">
 			<!-- logo - icon only (for mobile) -->
 			<div class="absolute">
 				<a href="index.html">
-					<img src="images/Icon.png" class="logo unselectable wow fadeIn nonmobile-hidden"/>
+					<img src="images/Icon.png" class="logo unselectable wow fadeIn display-only-at-phone-dimensions"/>
 				</a>
 			</div>
 			<!-- logo (for tablet+) -->
 			<div class="absolute">
 				<a href="index.html">
-					<img src="images/Logo.png" class="logo unselectable wow fadeIn nonmobile-visible"/>
+					<img src="images/Logo.png" class="logo unselectable wow fadeIn display-only-at-nonphone-dimensions"/>
 				</a>
 			</div>
 			<!-- modified Git Hub Corner (https://github.com/tholman/github-corners); original © Tim Holman 2016 -->
@@ -50,27 +50,27 @@
 				<a href="https://github.com/MoonMotionProject/MoonMotion" class="git-hub-corner" aria-label="Access the repository"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:var(--color-main); color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.git-hub-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.git-hub-corner:hover .octo-arm{animation:none}.git-hub-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 			</div>
 			<!-- buttons -->
-			<div class="absolute" id="cover-buttons-grid-positioner">
+			<div class="absolute" id="Moon-Motion-cover-buttons-grid-positioner">
 				<div class="relative">
-					<div class="grid buttons-grid unselectable wow fadeIn">
+					<div class="grid unselectable wow fadeIn" id="Moon-Motion-buttons-grid">
 						<div class="cell cell-flex-centered">
-							<button id="button-Features">Features</button>
+							<button class="Moon-Motion-button" id="Moon-Motion-button-Features">Features</button>
 						</div>
 						<div class="cell cell-flex-centered">
-							<button id="button-Git-Started">Git Started</button>
+							<button class="Moon-Motion-button" id="Moon-Motion-button-Git-Started">Git Started</button>
 						</div>
 						<div class="cell cell-flex-centered">
-							<button id="button-Documentation">View Docs</button>
+							<button class="Moon-Motion-button" id="Moon-Motion-button-Documentation">View Docs</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- image - desktop -->
-			<img src="images/Cover.jpg" class="fullwidth undraggable" id="cover-image-desktop"/>
+			<img src="images/Moon Motion Cover - desktop.jpg" class="fullwidth undraggable display-only-at-desktop-dimensions"/>
 			<!-- image - tablet -->
-			<img src="images/Cover - tablet.jpg" class="fullwidth undraggable" id="cover-image-tablet"/>
+			<img src="images/Moon Motion Cover - tablet.jpg" class="fullwidth undraggable display-only-at-tablet-dimensions"/>
 			<!-- image - mobile -->
-			<img src="images/Cover - mobile.jpg" class="fullwidth undraggable" id="cover-image-mobile"/>
+			<img src="images/Moon Motion Cover - mobile.jpg" class="fullwidth undraggable display-only-at-phone-dimensions"/>
 		</div>
 
 		<!-- block: Create Moving Experiences -->
@@ -308,8 +308,8 @@
 		<div class="block-padded background-dark" id="Platforms-Support">
 			<!-- brands image -->
 			<div class="align-center wow fadeIn">
-				<img src="images/Platforms Support Brands Image - without WMR.png" class="platforms-support-brands-image nonmobile-hidden"/>
-				<img src="images/Platforms Support Brands Image.png" class="platforms-support-brands-image nonmobile-visible"/>
+				<img src="images/Platforms Support Brands Image - without WMR.png" class="platforms-support-brands-image display-only-at-phone-dimensions"/>
+				<img src="images/Platforms Support Brands Image.png" class="platforms-support-brands-image display-only-at-nonphone-dimensions"/>
 			</div>
 			<!-- article -->
 			<div class="block-article-padding" id="Unity-compatibility-statement-padding">
@@ -325,7 +325,7 @@
 			<!-- text -->
 			<div class="align-center wow fadeIn" id="footer-text">
 				<p>
-					&copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> <a href="https://github.com/MoonMotionProject" target="blank">Moon Motion Project</a>.<br class="nonmobile-hidden"><span class="nonmobile-visible">&nbsp;</span>Development by <a href="https://github.com/MoonMotionProject/MoonMotion/graphs/contributors" target="blank">Moon Motion contributors</a>.<br class="nonmobile-hidden"><span class="nonmobile-visible">&nbsp;</span>Website created by <a href="http://hunterbobeck.me/" target="blank" class="link-Felewin">Hunter Bobeck</a>.
+					&copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> <a href="https://github.com/MoonMotionProject" target="blank">Moon Motion Project</a>.<br class="display-only-at-phone-dimensions"><span class="display-only-at-nonphone-dimensions">&nbsp;</span>Development by <a href="https://github.com/MoonMotionProject/MoonMotion/graphs/contributors" target="blank">Moon Motion contributors</a>.<br class="display-only-at-phone-dimensions"><span class="display-only-at-nonphone-dimensions">&nbsp;</span>Website created by <a href="http://hunterbobeck.me/" target="blank" class="link-Felewin">Hunter Bobeck</a>.
 				</p>
 			</div>
 		</div>
@@ -341,15 +341,15 @@
 		<!-- Felewin subpage titling -->		<script src="js/Felewin-subpage-titling.js"></script>
 		<!-- smooth identifier scrolling -->
 		<script>
-			$("#button-Features").click(function()
+			$("#Moon-Motion-button-Features").click(function()
 			{
 				scrollTo("#Features", 300);
 			});
-			$("#button-Git-Started").click(function()
+			$("#Moon-Motion-button-Git-Started").click(function()
 			{
 				scrollTo("#Git-Started", 400);
 			});
-			$("#button-Documentation").click(function()
+			$("#Moon-Motion-button-Documentation").click(function()
 			{
 				window.location.href = "Documentation.html";
 			});

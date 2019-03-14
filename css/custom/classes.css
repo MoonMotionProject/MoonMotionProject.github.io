@@ -147,27 +147,6 @@ h4 > i {
 	padding-right: .5em;
 }
 
-/* buttons grids */
-.buttons-grid {
-	/* grid axes */
-	grid-template-columns: repeat(auto-fit, 22.5vw);
-	grid-template-rows: repeat(auto-fit, 6vw);
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	.buttons-grid {
-		/* grid axes */
-		grid-template-columns: repeat(auto-fit, 15vw);
-		grid-template-rows: repeat(auto-fit, 4vw);
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	.buttons-grid {
-		/* grid axes */
-		grid-template-columns: repeat(auto-fit, 7.5vw);
-		grid-template-rows: repeat(auto-fit, 2vw);
-	}
-}
-
 /* media grids/cells */
 .media-grid {
 	/* grid columns */
