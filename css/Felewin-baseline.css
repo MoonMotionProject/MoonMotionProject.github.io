@@ -660,6 +660,9 @@ button:focus {
 .link-Patreon:hover {
 	color: var(--color-link-Patreon-hovered);
 }
+.link-Trello-image > img {
+	border-radius: 1em;
+}
 
 /* text formatting */
 .weight-light {
