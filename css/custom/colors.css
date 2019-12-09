@@ -8,10 +8,10 @@
 	--color-dark-lighter: var(--color-Steam-lightened);
 
 	/* icon */
-	--color-icon-light: #53bdd3;
-	--color-icon-dark: #1996cd;
+	--color-icon-light: var(--color-Moon-Motion-icon-light);
+	--color-icon-dark: var(--color-Moon-Motion-icon-dark);
 
 	/* links */
-    --color-link: var(--color-icon-light);
-    --color-link-hovered: var(--color-icon-dark);
+    --color-link: var(--color-Moon-Motion-icon-light);
+    --color-link-hovered: var(--color-Moon-Motion-icon-dark);
 }
