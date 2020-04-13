@@ -70,34 +70,6 @@
 	color: var(--color-link)
 }
 
-/* block "article" padding */
-.block-article-padding {
-	/* padding */
-	padding-left: 10%;
-	padding-right: 10%;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	.block-article-padding {
-		/* padding */
-		padding-left: 20%;
-		padding-right: 20%;
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	.block-article-padding {
-		/* padding */
-		padding-left: 20%;
-		padding-right: 20%;
-	}
-}
-@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
-	.block-article-padding {
-		/* padding */
-		padding-left: 30%;
-		padding-right: 30%;
-	}
-}
-
 /* block dividers */
 .block-divider {
 	/* padding */
