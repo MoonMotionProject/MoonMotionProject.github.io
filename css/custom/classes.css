@@ -324,13 +324,18 @@ a > .docs-link-header:hover {
 	border-radius: .5em;
 }
 .docs-screenshot {
+	/* alignment */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
 	/* margin */
 	margin-top: .3em;
 	margin-bottom: 1em;
-
+	
 	/* size */
 	max-width: 100%;
-
+	
 	/* border */
 	border: 2.5px solid var(--color-light);
 }
