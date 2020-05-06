@@ -70,8 +70,8 @@
 	color: var(--color-link)
 }
 
-/* block dividers */
-.block-divider {
+/* pad dividers */
+.pad-divider {
 	/* padding */
 	padding-top: 1em;
 
